@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html style="background-image: url(mifondo.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 1400px;">
+
+<head>
+	<title>INGRESAR UN DATO</title>
+</head>
+<style> 
+	body {
+		text-align: center; 
+		font-size: 30px;
+		color: white;
+		font-family: cooper black;
+	}
+	table {
+		margin: 0 auto; text-align: left;
+	}
+	input {
+		font-size: 20px;
+		font-family: cooper black;
+	}
+</style>
+
+<header style="color: white; font-size: 50px;"><br>
+Ingresa los datos de la Persona
+</header>
+<form action='administrar_persona.php' method='post'>
+	<table><br>
+		<tr>
+			<td>ID:</td>
+			<td> <input type='text' name='id'></td>
+		</tr>
+
+		<tr>
+			<td>Nombre:</td>
+			<td> <input type='text' name='nombre'></td>
+		</tr>
+		<tr>
+			<td>Edad:</td>
+			<td><input type='text' name='edad' ></td>
+		</tr>
+		
+		<input type='hidden' name='insertar' value='insertar'>
+	</table><br>
+	<input type='submit' value='Guardar' style="font-size: 30px;">
+	<a href="index.php" style="color: darkred;">Volver</a>
+</form>
+
+</html>
